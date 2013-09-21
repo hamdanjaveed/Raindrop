@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAFD9C2917EE5E050066ED59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2817EE5E050066ED59 /* Foundation.framework */; };
+		EAFD9C2B17EE5E050066ED59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2A17EE5E050066ED59 /* CoreGraphics.framework */; };
+		EAFD9C2D17EE5E050066ED59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2C17EE5E050066ED59 /* UIKit.framework */; };
+		EAFD9C2F17EE5E060066ED59 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2E17EE5E060066ED59 /* SpriteKit.framework */; };
+		EAFD9C3517EE5E060066ED59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C3317EE5E060066ED59 /* InfoPlist.strings */; };
+		EAFD9C3717EE5E060066ED59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C3617EE5E060066ED59 /* main.m */; };
+		EAFD9C3B17EE5E060066ED59 /* RaindropAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C3A17EE5E060066ED59 /* RaindropAppDelegate.m */; };
+		EAFD9C3E17EE5E060066ED59 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C3C17EE5E060066ED59 /* Main_iPhone.storyboard */; };
+		EAFD9C4117EE5E060066ED59 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C3F17EE5E060066ED59 /* Main_iPad.storyboard */; };
+		EAFD9C4417EE5E060066ED59 /* RaindropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C4317EE5E060066ED59 /* RaindropViewController.m */; };
+		EAFD9C4717EE5E060066ED59 /* RaindropMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C4617EE5E060066ED59 /* RaindropMyScene.m */; };
+		EAFD9C4917EE5E060066ED59 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C4817EE5E060066ED59 /* Spaceship.png */; };
+		EAFD9C4B17EE5E060066ED59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C4A17EE5E060066ED59 /* Images.xcassets */; };
+		EAFD9C5217EE5E060066ED59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C5117EE5E060066ED59 /* XCTest.framework */; };
+		EAFD9C5317EE5E060066ED59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2817EE5E050066ED59 /* Foundation.framework */; };
+		EAFD9C5417EE5E060066ED59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2C17EE5E050066ED59 /* UIKit.framework */; };
+		EAFD9C5C17EE5E060066ED59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C5A17EE5E060066ED59 /* InfoPlist.strings */; };
+		EAFD9C5E17EE5E060066ED59 /* RaindropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C5D17EE5E060066ED59 /* RaindropTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFD9C5517EE5E060066ED59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFD9C1D17EE5E050066ED59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFD9C2417EE5E050066ED59;
+			remoteInfo = Raindrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAFD9C2517EE5E050066ED59 /* Raindrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raindrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFD9C2817EE5E050066ED59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAFD9C2A17EE5E050066ED59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAFD9C2C17EE5E050066ED59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAFD9C2E17EE5E060066ED59 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EAFD9C3217EE5E060066ED59 /* Raindrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Raindrop-Info.plist"; sourceTree = "<group>"; };
+		EAFD9C3417EE5E060066ED59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAFD9C3617EE5E060066ED59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAFD9C3817EE5E060066ED59 /* Raindrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Raindrop-Prefix.pch"; sourceTree = "<group>"; };
+		EAFD9C3917EE5E060066ED59 /* RaindropAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaindropAppDelegate.h; sourceTree = "<group>"; };
+		EAFD9C3A17EE5E060066ED59 /* RaindropAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaindropAppDelegate.m; sourceTree = "<group>"; };
+		EAFD9C3D17EE5E060066ED59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EAFD9C4017EE5E060066ED59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EAFD9C4217EE5E060066ED59 /* RaindropViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaindropViewController.h; sourceTree = "<group>"; };
+		EAFD9C4317EE5E060066ED59 /* RaindropViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaindropViewController.m; sourceTree = "<group>"; };
+		EAFD9C4517EE5E060066ED59 /* RaindropMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaindropMyScene.h; sourceTree = "<group>"; };
+		EAFD9C4617EE5E060066ED59 /* RaindropMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaindropMyScene.m; sourceTree = "<group>"; };
+		EAFD9C4817EE5E060066ED59 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EAFD9C4A17EE5E060066ED59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAFD9C5017EE5E060066ED59 /* RaindropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaindropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFD9C5117EE5E060066ED59 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAFD9C5917EE5E060066ED59 /* RaindropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaindropTests-Info.plist"; sourceTree = "<group>"; };
+		EAFD9C5B17EE5E060066ED59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAFD9C5D17EE5E060066ED59 /* RaindropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaindropTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFD9C2217EE5E050066ED59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFD9C2B17EE5E050066ED59 /* CoreGraphics.framework in Frameworks */,
+				EAFD9C2D17EE5E050066ED59 /* UIKit.framework in Frameworks */,
+				EAFD9C2F17EE5E060066ED59 /* SpriteKit.framework in Frameworks */,
+				EAFD9C2917EE5E050066ED59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFD9C4D17EE5E060066ED59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFD9C5217EE5E060066ED59 /* XCTest.framework in Frameworks */,
+				EAFD9C5417EE5E060066ED59 /* UIKit.framework in Frameworks */,
+				EAFD9C5317EE5E060066ED59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAFD9C1C17EE5E050066ED59 = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C3017EE5E060066ED59 /* Raindrop */,
+				EAFD9C5717EE5E060066ED59 /* RaindropTests */,
+				EAFD9C2717EE5E050066ED59 /* Frameworks */,
+				EAFD9C2617EE5E050066ED59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFD9C2617EE5E050066ED59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C2517EE5E050066ED59 /* Raindrop.app */,
+				EAFD9C5017EE5E060066ED59 /* RaindropTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFD9C2717EE5E050066ED59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C2817EE5E050066ED59 /* Foundation.framework */,
+				EAFD9C2A17EE5E050066ED59 /* CoreGraphics.framework */,
+				EAFD9C2C17EE5E050066ED59 /* UIKit.framework */,
+				EAFD9C2E17EE5E060066ED59 /* SpriteKit.framework */,
+				EAFD9C5117EE5E060066ED59 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAFD9C3017EE5E060066ED59 /* Raindrop */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C3917EE5E060066ED59 /* RaindropAppDelegate.h */,
+				EAFD9C3A17EE5E060066ED59 /* RaindropAppDelegate.m */,
+				EAFD9C3C17EE5E060066ED59 /* Main_iPhone.storyboard */,
+				EAFD9C3F17EE5E060066ED59 /* Main_iPad.storyboard */,
+				EAFD9C4217EE5E060066ED59 /* RaindropViewController.h */,
+				EAFD9C4317EE5E060066ED59 /* RaindropViewController.m */,
+				EAFD9C4517EE5E060066ED59 /* RaindropMyScene.h */,
+				EAFD9C4617EE5E060066ED59 /* RaindropMyScene.m */,
+				EAFD9C4817EE5E060066ED59 /* Spaceship.png */,
+				EAFD9C4A17EE5E060066ED59 /* Images.xcassets */,
+				EAFD9C3117EE5E060066ED59 /* Supporting Files */,
+			);
+			path = Raindrop;
+			sourceTree = "<group>";
+		};
+		EAFD9C3117EE5E060066ED59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C3217EE5E060066ED59 /* Raindrop-Info.plist */,
+				EAFD9C3317EE5E060066ED59 /* InfoPlist.strings */,
+				EAFD9C3617EE5E060066ED59 /* main.m */,
+				EAFD9C3817EE5E060066ED59 /* Raindrop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAFD9C5717EE5E060066ED59 /* RaindropTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C5D17EE5E060066ED59 /* RaindropTests.m */,
+				EAFD9C5817EE5E060066ED59 /* Supporting Files */,
+			);
+			path = RaindropTests;
+			sourceTree = "<group>";
+		};
+		EAFD9C5817EE5E060066ED59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD9C5917EE5E060066ED59 /* RaindropTests-Info.plist */,
+				EAFD9C5A17EE5E060066ED59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFD9C2417EE5E050066ED59 /* Raindrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFD9C6117EE5E060066ED59 /* Build configuration list for PBXNativeTarget "Raindrop" */;
+			buildPhases = (
+				EAFD9C2117EE5E050066ED59 /* Sources */,
+				EAFD9C2217EE5E050066ED59 /* Frameworks */,
+				EAFD9C2317EE5E050066ED59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raindrop;
+			productName = Raindrop;
+			productReference = EAFD9C2517EE5E050066ED59 /* Raindrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFD9C4F17EE5E060066ED59 /* RaindropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFD9C6417EE5E060066ED59 /* Build configuration list for PBXNativeTarget "RaindropTests" */;
+			buildPhases = (
+				EAFD9C4C17EE5E060066ED59 /* Sources */,
+				EAFD9C4D17EE5E060066ED59 /* Frameworks */,
+				EAFD9C4E17EE5E060066ED59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFD9C5617EE5E060066ED59 /* PBXTargetDependency */,
+			);
+			name = RaindropTests;
+			productName = RaindropTests;
+			productReference = EAFD9C5017EE5E060066ED59 /* RaindropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFD9C1D17EE5E050066ED59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Raindrop;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Hamdan Javeed";
+				TargetAttributes = {
+					EAFD9C4F17EE5E060066ED59 = {
+						TestTargetID = EAFD9C2417EE5E050066ED59;
+					};
+				};
+			};
+			buildConfigurationList = EAFD9C2017EE5E050066ED59 /* Build configuration list for PBXProject "Raindrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFD9C1C17EE5E050066ED59;
+			productRefGroup = EAFD9C2617EE5E050066ED59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFD9C2417EE5E050066ED59 /* Raindrop */,
+				EAFD9C4F17EE5E060066ED59 /* RaindropTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFD9C2317EE5E050066ED59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFD9C4917EE5E060066ED59 /* Spaceship.png in Resources */,
+				EAFD9C4B17EE5E060066ED59 /* Images.xcassets in Resources */,
+				EAFD9C4117EE5E060066ED59 /* Main_iPad.storyboard in Resources */,
+				EAFD9C3E17EE5E060066ED59 /* Main_iPhone.storyboard in Resources */,
+				EAFD9C3517EE5E060066ED59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFD9C4E17EE5E060066ED59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFD9C5C17EE5E060066ED59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFD9C2117EE5E050066ED59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFD9C4417EE5E060066ED59 /* RaindropViewController.m in Sources */,
+				EAFD9C3717EE5E060066ED59 /* main.m in Sources */,
+				EAFD9C3B17EE5E060066ED59 /* RaindropAppDelegate.m in Sources */,
+				EAFD9C4717EE5E060066ED59 /* RaindropMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFD9C4C17EE5E060066ED59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFD9C5E17EE5E060066ED59 /* RaindropTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFD9C5617EE5E060066ED59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFD9C2417EE5E050066ED59 /* Raindrop */;
+			targetProxy = EAFD9C5517EE5E060066ED59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFD9C3317EE5E060066ED59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFD9C3417EE5E060066ED59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAFD9C3C17EE5E060066ED59 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFD9C3D17EE5E060066ED59 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFD9C3F17EE5E060066ED59 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFD9C4017EE5E060066ED59 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFD9C5A17EE5E060066ED59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFD9C5B17EE5E060066ED59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFD9C5F17EE5E060066ED59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFD9C6017EE5E060066ED59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFD9C6217EE5E060066ED59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Raindrop/Raindrop-Prefix.pch";
+				INFOPLIST_FILE = "Raindrop/Raindrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAFD9C6317EE5E060066ED59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Raindrop/Raindrop-Prefix.pch";
+				INFOPLIST_FILE = "Raindrop/Raindrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAFD9C6517EE5E060066ED59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Raindrop.app/Raindrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Raindrop/Raindrop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RaindropTests/RaindropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAFD9C6617EE5E060066ED59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Raindrop.app/Raindrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Raindrop/Raindrop-Prefix.pch";
+				INFOPLIST_FILE = "RaindropTests/RaindropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFD9C2017EE5E050066ED59 /* Build configuration list for PBXProject "Raindrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFD9C5F17EE5E060066ED59 /* Debug */,
+				EAFD9C6017EE5E060066ED59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFD9C6117EE5E060066ED59 /* Build configuration list for PBXNativeTarget "Raindrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFD9C6217EE5E060066ED59 /* Debug */,
+				EAFD9C6317EE5E060066ED59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAFD9C6417EE5E060066ED59 /* Build configuration list for PBXNativeTarget "RaindropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFD9C6517EE5E060066ED59 /* Debug */,
+				EAFD9C6617EE5E060066ED59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAFD9C1D17EE5E050066ED59 /* Project object */;
+}
