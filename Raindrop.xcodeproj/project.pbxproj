@@ -174,6 +174,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAFD9C6117EE5E060066ED59 /* Build configuration list for PBXNativeTarget "Raindrop" */;
 			buildPhases = (
+				EAFD9C6717EE5E1C0066ED59 /* ShellScript */,
 				EAFD9C2117EE5E050066ED59 /* Sources */,
 				EAFD9C2217EE5E050066ED59 /* Frameworks */,
 				EAFD9C2317EE5E050066ED59 /* Resources */,
@@ -215,6 +216,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Hamdan Javeed";
 				TargetAttributes = {
+					EAFD9C2417EE5E050066ED59 = {
+						DevelopmentTeam = AK3NQ2H5W8;
+					};
 					EAFD9C4F17EE5E060066ED59 = {
 						TestTargetID = EAFD9C2417EE5E050066ED59;
 					};
@@ -261,6 +265,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAFD9C6717EE5E1C0066ED59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%X\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAFD9C2117EE5E050066ED59 /* Sources */ = {
@@ -407,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Raindrop/Raindrop-Prefix.pch";
 				INFOPLIST_FILE = "Raindrop/Raindrop-Info.plist";
@@ -421,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Raindrop/Raindrop-Prefix.pch";
 				INFOPLIST_FILE = "Raindrop/Raindrop-Info.plist";
