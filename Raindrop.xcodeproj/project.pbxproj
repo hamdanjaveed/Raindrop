@@ -17,8 +17,6 @@
 		EAFD9C3E17EE5E060066ED59 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C3C17EE5E060066ED59 /* Main_iPhone.storyboard */; };
 		EAFD9C4117EE5E060066ED59 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C3F17EE5E060066ED59 /* Main_iPad.storyboard */; };
 		EAFD9C4417EE5E060066ED59 /* RaindropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C4317EE5E060066ED59 /* RaindropViewController.m */; };
-		EAFD9C4717EE5E060066ED59 /* RaindropMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFD9C4617EE5E060066ED59 /* RaindropMyScene.m */; };
-		EAFD9C4917EE5E060066ED59 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C4817EE5E060066ED59 /* Spaceship.png */; };
 		EAFD9C4B17EE5E060066ED59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFD9C4A17EE5E060066ED59 /* Images.xcassets */; };
 		EAFD9C5217EE5E060066ED59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C5117EE5E060066ED59 /* XCTest.framework */; };
 		EAFD9C5317EE5E060066ED59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFD9C2817EE5E050066ED59 /* Foundation.framework */; };
@@ -53,9 +51,6 @@
 		EAFD9C4017EE5E060066ED59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		EAFD9C4217EE5E060066ED59 /* RaindropViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaindropViewController.h; sourceTree = "<group>"; };
 		EAFD9C4317EE5E060066ED59 /* RaindropViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaindropViewController.m; sourceTree = "<group>"; };
-		EAFD9C4517EE5E060066ED59 /* RaindropMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaindropMyScene.h; sourceTree = "<group>"; };
-		EAFD9C4617EE5E060066ED59 /* RaindropMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaindropMyScene.m; sourceTree = "<group>"; };
-		EAFD9C4817EE5E060066ED59 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EAFD9C4A17EE5E060066ED59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EAFD9C5017EE5E060066ED59 /* RaindropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaindropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFD9C5117EE5E060066ED59 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -129,9 +124,6 @@
 				EAFD9C3F17EE5E060066ED59 /* Main_iPad.storyboard */,
 				EAFD9C4217EE5E060066ED59 /* RaindropViewController.h */,
 				EAFD9C4317EE5E060066ED59 /* RaindropViewController.m */,
-				EAFD9C4517EE5E060066ED59 /* RaindropMyScene.h */,
-				EAFD9C4617EE5E060066ED59 /* RaindropMyScene.m */,
-				EAFD9C4817EE5E060066ED59 /* Spaceship.png */,
 				EAFD9C4A17EE5E060066ED59 /* Images.xcassets */,
 				EAFD9C3117EE5E060066ED59 /* Supporting Files */,
 			);
@@ -248,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFD9C4917EE5E060066ED59 /* Spaceship.png in Resources */,
 				EAFD9C4B17EE5E060066ED59 /* Images.xcassets in Resources */,
 				EAFD9C4117EE5E060066ED59 /* Main_iPad.storyboard in Resources */,
 				EAFD9C3E17EE5E060066ED59 /* Main_iPhone.storyboard in Resources */,
@@ -290,7 +281,6 @@
 				EAFD9C4417EE5E060066ED59 /* RaindropViewController.m in Sources */,
 				EAFD9C3717EE5E060066ED59 /* main.m in Sources */,
 				EAFD9C3B17EE5E060066ED59 /* RaindropAppDelegate.m in Sources */,
-				EAFD9C4717EE5E060066ED59 /* RaindropMyScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +503,7 @@
 				EAFD9C6317EE5E060066ED59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAFD9C6417EE5E060066ED59 /* Build configuration list for PBXNativeTarget "RaindropTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +512,7 @@
 				EAFD9C6617EE5E060066ED59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
